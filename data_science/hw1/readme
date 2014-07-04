@@ -1,3 +1,26 @@
-hw1 instructions
+B) A List of Problems
+
+Problem 1: Get Twitter Data
+Problem 2: Derive the sentiment of each tweet
+Problem 3: Derive the sentiment of new terms
+Problem 4: Compute Term Frequency
+Problem 5: Which State is happiest?
+
+A) Prep
+
+3) To access the live stream, you will need to install the oauth2 library so you can properly authenticate.
+
+$sudo pip install oauth2
+
+2) python env per Python 2.7.3 environment
+
+$ python
+Python 2.7.6 (default, Mar 22 2014, 22:59:56) 
+[GCC 4.8.2] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+
+
+1) hw1 instructions
 
 https://class.coursera.org/datasci-002/assignment/view?assignment_id=3
