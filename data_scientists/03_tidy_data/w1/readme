@@ -1,0 +1,37 @@
+A) runtime
+
+1) R
+> x<-3
+> y<-3
+> z<-sqrt(x*x + y*y)
+> print z
+
+2) run R script
+
+$ R
+
+> source("1.R")
+[1] 5
+> 
+
+3) view file
+
+$ cat 1.R
+x <-3
+y <-4
+z <- sqrt(x*x + y*y)
+print (z)
+
+B) Ref - Language R, 101
+
+1) R script
+http://cran.r-project.org/doc/contrib/Lemon-kickstart/kr_scrpt.html
+
+2) how to run R
+http://www.mayin.org/ajayshah/KB/R/documents/howtorun.html
+
+3) R tutotial
+http://www.mayin.org/ajayshah/KB/R/tutorial.R
+
+
+
