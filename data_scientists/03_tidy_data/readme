@@ -1,2 +1,6 @@
 data scientist
 
+install - R Language Interpreter
+
+$sudo apt-get install r-base-core
+
