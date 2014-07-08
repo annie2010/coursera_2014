@@ -1,0 +1,88 @@
+C) validated installation
+
+$ R
+> library(xlsx)
+Loading required package: rJava
+Loading required package: xlsxjars
+> 
+
+B) install
+
+$sudo Rscript install_xlsx.R
+Installing package into ‘/usr/local/lib/R/site-library’
+(as ‘lib’ is unspecified)
+* installing *source* package ‘xlsxjars’ ...
+** package ‘xlsxjars’ successfully unpacked and MD5 sums checked
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (xlsxjars)
+Installing package into ‘/usr/local/lib/R/site-library’
+(as ‘lib’ is unspecified)
+* installing *source* package ‘xlsx’ ...
+** package ‘xlsx’ successfully unpacked and MD5 sums checked
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (xlsx)
+
+B.1)
+
+$wget http://cran.r-project.org/src/contrib/xlsx_0.5.5.tar.gz
+$wget http://cran.r-project.org/src/contrib/xlsx_0.5.5.tar.gz
+
+A) prep
+
+install 
+
+http://stackoverflow.com/questions/1474081/how-do-i-install-an-r-package-from-source
+If you have the file locally, then use install.packages() and set the repos=NULL:
+> install.packages(file_name_and_path, repos = NULL, type="source")
+
+details:
+
+1) package xlsx from CRAN
+
+http://cran.r-project.org/web/packages/xlsx/index.html
+$wget http://cran.r-project.org/src/contrib/xlsx_0.5.5.tar.gz
+xlsx: Read, write, format Excel 2007 and Excel 97/2000/XP/2003 files
+Provide R functions to read/write/format Excel 2007 and Excel 97/2000/XP/2003 file formats.
+
+1.b)dependencies
+
+http://cran.r-project.org/web/packages/xlsxjars/index.html
+$ wget http://cran.r-project.org/src/contrib/xlsxjars_0.6.0.tar.gz
+xlsxjars: Package required POI jars for the xlsx package
+The xlsxjars package collects all the external jars required for the xlxs package.
+
+1.c) install java/jre
+$ sudo apt-get install default-jre
+$ sudo apt-get install r-cran-rjava 
+
+validated
+
+$java -version
+java version "1.7.0_55"
+OpenJDK Runtime Environment (IcedTea 2.4.7) (7u55-2.4.7-1ubuntu1)
+OpenJDK 64-Bit Server VM (build 24.51-b03, mixed mode)
+
+
+2 ) rexcel from Google
+
+An R package to read/write/format Excel 2007 and Excel 97/2000/XP/2003 file formats
+
+https://code.google.com/p/rexcel/
+
+An R package to interact with Excel files using the Apache POI java library
+
+
+
