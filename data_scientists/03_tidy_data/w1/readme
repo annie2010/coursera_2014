@@ -6,7 +6,13 @@ A) runtime
 > z<-sqrt(x*x + y*y)
 > print z
 
-2) run R script
+2.a) invoking R script
+
+$ Rscript 1.R
+[1] 5
+
+
+2.b) run R script
 
 $ R
 
