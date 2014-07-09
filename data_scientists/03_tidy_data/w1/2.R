@@ -1,5 +1,5 @@
 if(!file.exists("data")){dir.create("data")}
-fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06hid.csv"
+#fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06hid.csv"
 download.file(fileUrl,destfile="./data/getdata.csv",method="curl")
 dateDownloaded <-date()
 
@@ -7,7 +7,7 @@ dateDownloaded <-date()
 houseData <-read.csv("./data/getdata.csv", header=TRUE)
 ##head(houseData)
 numbers <- houseData$VAL
-as.data.frame(table(numbers))
+#as.data.frame(table(numbers))
 
 ##
 # http://stackoverflow.com/questions/1923273/counting-the-number-of-elements-with-the-values-of-x-in-a-vector
