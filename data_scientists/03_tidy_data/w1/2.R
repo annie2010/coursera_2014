@@ -9,6 +9,9 @@ houseData <-read.csv("./data/getdata.csv", header=TRUE)
 numbers <- houseData$VAL
 as.data.frame(table(numbers))
 
+##
+# http://stackoverflow.com/questions/1923273/counting-the-number-of-elements-with-the-values-of-x-in-a-vector
+
 #numbers <- houseData$VAL
 
 ## donwload a file
