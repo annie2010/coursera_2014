@@ -24,11 +24,40 @@ Comment <- function(`@Comments`) {invisible()}
 
 ### comments ###
 Comment(`
-Usage
 
-download.file(url, destfile, method, quiet = FALSE, mode = "w",
-              cacheOK = TRUE,
-              extra = getOption("download.file.extra"))
+Sample runtime output
+
+$ Rscript 2.R 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 4147k  100 4147k    0     0  11.3M      0 --:--:-- --:--:-- --:--:-- 11.3M
+   numbers Freq
+1        1   75
+2        2   42
+3        3   33
+4        4   30
+5        5   26
+6        6   29
+7        7   23
+8        8   70
+9        9   99
+10      10  119
+11      11  152
+12      12  199
+13      13  233
+14      14  495
+15      15  483
+16      16  486
+17      17  357
+18      18  502
+19      19  232
+20      20  312
+21      21  164
+22      22  159
+23      23   47
+24      24   53
+
+
 `)
 
 ## comments
