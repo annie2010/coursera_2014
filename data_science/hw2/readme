@@ -1,0 +1,33 @@
+
+2) sqlite  cli - http://www.sqlite.org/cli.html
+
+$ sqlite3 reuters.db 
+
+SQLite version 3.8.2 2013-12-06 14:53:30
+Enter ".help" for instructions
+Enter SQL statements terminated with a ";"
+
+sqlite> .databases
+seq  name             file                                                      
+---  ---------------  ----------------------------------------------------------
+0    main             /home/ubuntu/coursera_2014/data_science/datasci_course_mat
+
+sqlite> .tables
+Frequency
+
+sqlite> .schema Frequency
+CREATE TABLE Frequency (
+docid VARCHAR(255),
+term VARCHAR(255),
+count int,
+PRIMARY KEY(docid, term));
+
+sqlite> .help
+
+sqlite> select count(*) from Frequency where docid='1398_txt_earn';
+
+sqlite> .quit
+
+
+1) SQLite GUI Viewer
+on mac, “SQLite Database Browser 2.0 b1” to view reuters.db
