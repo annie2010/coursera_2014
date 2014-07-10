@@ -1,3 +1,31 @@
+3) another DB
+
+$sqlite3 matrix.db 
+SQLite version 3.8.2 2013-12-06 14:53:30
+Enter ".help" for instructions
+Enter SQL statements terminated with a ";"
+sqlite> .databases;
+Error: unknown command or invalid arguments:  "databases;". Enter ".help" for help
+sqlite> .databases
+seq  name             file                                                      
+---  ---------------  ----------------------------------------------------------
+0    main             /home/ubuntu/coursera_2014/data_science/datasci_course_mat
+sqlite> .tables
+a  b
+sqlite> .schema a
+CREATE TABLE a (
+row_num int,
+col_num int,
+value int,
+primary key (row_num, col_num));
+sqlite> .schema b
+CREATE TABLE b (
+row_num int,
+col_num int,
+value int,
+primary key (row_num, col_num));
+sqlite> .quit
+
 
 2) sqlite  cli - http://www.sqlite.org/cli.html
 
