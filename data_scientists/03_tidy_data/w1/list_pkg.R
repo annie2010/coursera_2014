@@ -9,5 +9,6 @@ cat("\n\n2. Loaded packages\n")
 cat("\n\n3. Available packages\n")
 (.packages(all.available=TRUE))
 
-# R 
+# R
+# http://how-to.linuxcareer.com/how-to-install-and-use-packages-in-gnu-r 
 # http://stackoverflow.com/questions/4071586/printing-newlines-with-print-in-r
