@@ -2,7 +2,7 @@ sudo apt-get install r-cran-plyr
 sudo apt-get install r-cran-stringr
 sudo apt-get install r-cran-rcpp
 sudo apt-get install r-cran-reshape2
-sudo apt-get install r-cran-reshape2
+sudo apt-get install r-cran-*
 
 # import and export data
 # http://en.wikibooks.org/wiki/R_Programming/Importing_and_exporting_data
