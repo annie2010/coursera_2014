@@ -1,0 +1,39 @@
+1) on mac
+
+$ R
+
+> install.packages("data.table")
+--- Please select a CRAN mirror for use in this session ---
+80
+trying URL 'http://cran.stat.ucla.edu/bin/macosx/contrib/3.0/data.table_1.9.2.tgz'
+Content type 'application/x-tar' length 1270580 bytes (1.2 Mb)
+opened URL
+==================================================
+downloaded 1.2 Mb
+
+
+The downloaded binary packages are in
+	/var/folders/57/35dz6zkd3t350hp8f0hgm79w0000gq/T//RtmpSZHIKk/downloaded_packages
+> 80
+[1] 80
+
+> install.packages("/var/folders/57/35dz6zkd3t350hp8f0hgm79w0000gq/T//RtmpSZHIKk/downloaded_packages/data.table_1.9.2.tgz",repo=NULL)
+> library(data.table)
+data.table 1.9.2  For help type: help("data.table")
+
+2) on ubuntu
+
+$ R
+> install.packages("data.table")
+Installing package into ‘/home/ubuntu/R/x86_64-pc-linux-gnu-library/3.0’
+(as ‘lib’ is unspecified)
+--- Please select a CRAN mirror for use in this session ---
+CRAN mirror
+Selection: 80
+trying URL 'http://cran.stat.ucla.edu/src/contrib/data.table_1.9.2.tar.gz'
+
+> install.packages("/tmp/Rtmp3xmGrP/downloaded_packages/data.table_1.9.2.tar.gz",repo=NULL)
+* DONE (data.table)
+
+> library(data.table)
+data.table 1.9.2  For help type: help("data.table")
