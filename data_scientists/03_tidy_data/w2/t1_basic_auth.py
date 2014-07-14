@@ -1,14 +1,17 @@
+#!/usr/bin/env python
 import urllib2
 import json
 from StringIO import StringIO
 import base64
 
+auth_method = "Basic "
 username = "TBD"
 password = "TBD"
+auth = auth_method + base64.urlsafe_b64encode("%s:%s" % (username, password))
 
 req1 = urllib2.Request("https://api.github.com/users/jtleek/repos")
 req = urllib2.Request("https://api.github.com/repos/jtleek/datasharing")
-req.add_header("Authorization", "Basic " + base64.urlsafe_b64encode("%s:%s" % (username, password)))
+req.add_header("Authorization", auth)
 req.add_header("Content-Type", "application/json")
 req.add_header("Accept", "application/json")
 res = urllib2.urlopen(req)
