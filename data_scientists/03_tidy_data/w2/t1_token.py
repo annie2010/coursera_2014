@@ -1,10 +1,10 @@
+#!/usr/bin/env python
 import urllib2
 import json
 from StringIO import StringIO
-import base64
 
 auth_method="Token "
-token = TBD
+token = "TBD"
 auth = auth_method + token
 
 req1 = urllib2.Request("https://api.github.com/users/jtleek/repos")
