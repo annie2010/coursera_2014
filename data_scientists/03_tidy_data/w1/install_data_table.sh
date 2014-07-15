@@ -2,6 +2,9 @@ sudo apt-get install r-cran-plyr
 sudo apt-get install r-cran-stringr
 sudo apt-get install r-cran-rcpp
 sudo apt-get install r-cran-reshape2
+
+sudo apt-get install r-cran-httr
+sudo apt-get install r-cran-whisker
 #sudo apt-get install r-cran-*
 
 sudo apt-get -y build-dep libcurl4-gnutls-dev 
